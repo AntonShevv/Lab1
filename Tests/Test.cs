@@ -21,7 +21,7 @@ namespace Tests
         }
 
         [Fact]
-        public async Task Test1_GetBouquets_Success()
+        public async Task Test1()
         {
             if (!await IsServerRunning())
             {
@@ -53,7 +53,7 @@ namespace Tests
         }
 
         [Fact]
-        public async Task Test2_UnknownOperation_ReturnsError()
+        public async Task Test2()
         {
             if (!await IsServerRunning())
             {
@@ -74,7 +74,7 @@ namespace Tests
         }
 
         [Fact]
-        public async Task Test3_InvalidJson_ReturnsError()
+        public async Task Test3()
         {
             if (!await IsServerRunning())
             {
@@ -94,7 +94,7 @@ namespace Tests
         }
 
         [Fact]
-        public async Task Test4_ServerUnavailable_ThrowsException()
+        public async Task Test4()
         {
             string wrongUrl = "http://localhost:3001/";
             var requestData = new { Operation = "GetBouquets", Data = "" };

@@ -20,7 +20,7 @@ namespace Client
             while (true)
             {
                 Console.WriteLine("1 - Создать заказ");
-                Console.WriteLine("2 - Кастомизировать букет");
+                Console.WriteLine("2 - Изменить букет");
                 Console.WriteLine("3 - Назначить флориста");
                 Console.WriteLine("4 - Организовать доставку");
                 Console.WriteLine("5 - Просмотр букетов");

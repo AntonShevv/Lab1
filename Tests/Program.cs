@@ -16,7 +16,7 @@ namespace Tests
 
             try
             {
-                await testClass.Test1_GetBouquets_Success();
+                await testClass.Test1();
                 Console.WriteLine("Тест 1 (Успешный сценарий) пройден");
             }
             catch (Exception ex)
@@ -26,7 +26,7 @@ namespace Tests
 
             try
             {
-                await testClass.Test2_UnknownOperation_ReturnsError();
+                await testClass.Test2();
                 Console.WriteLine("Тест 2 (Неизвестная операция) пройден");
             }
             catch (Exception ex)
@@ -36,7 +36,7 @@ namespace Tests
 
             try
             {
-                await testClass.Test3_InvalidJson_ReturnsError();
+                await testClass.Test3();
                 Console.WriteLine("Тест 3 (Некорректные данные) пройден");
             }
             catch (Exception ex)
@@ -46,7 +46,7 @@ namespace Tests
 
             try
             {
-                await testClass.Test4_ServerUnavailable_ThrowsException();
+                await testClass.Test4();
                 Console.WriteLine("Тест 4 (Недоступный сервер) пройден");
             }
             catch (Exception ex)
