@@ -107,7 +107,7 @@ namespace Server
 
                 BouquetPrepared?.Invoke(order);
 
-                return JsonSerializer.Serialize(new { Message = "Букет кастомизирован", NewPrice = order.TotalPrice });
+                return JsonSerializer.Serialize(new { Message = "Букет изменен", NewPrice = order.TotalPrice });
             }
             catch (JsonException)
             {

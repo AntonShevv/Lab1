@@ -15,11 +15,14 @@ namespace Server
         public static event Action<Order> BouquetPrepared;
         public static event Action<Order> FloristAssigned;
         public static event Action<Order> DeliveryArranged;
-
+        public static bool isInitialized = false;
         public RequestHandler()
         {
-
-            action.InitializeData();
+            if (!isInitialized)
+            {
+                action.InitializeData();
+                isInitialized = true;
+            }
 
             OrderCreated += OnOrderCreated;
             BouquetPrepared += OnBouquetPrepared;
