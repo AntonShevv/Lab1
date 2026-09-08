@@ -1,0 +1,58 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.vs/
+*.vssscc
+*.vspscc
+*.sln.docstates
+_ReSharper.Caches/
+*.cache
+*.tmp
+*.tmp_proj
+*.log
+*.pidb
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.session
+*.opendb
+*.dbmdl
+*.VC.db
+*.VC.VC.opendb
+*.pidb
+*.pdb
+*.ilk
+*.meta
+*.mdb
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.mdb
+
+# Visual Studio
+.vs/
+*.swp
+*.swo
+*.suo
+*.userprefs
+*.sln.docstates
+build/
+deploy/
+packages/
+*.nupkg
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Linux
+*.pid
+*.sock
